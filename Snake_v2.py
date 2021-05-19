@@ -10,7 +10,7 @@ import pygame
 import sys
 import time
 import random
-import Window # My smal module i created. Got tired if creating a window erver game. 
+import Window # Small module i created. Got tired if creating a window every game. 
 import keyboard
 from pygame.locals import *
 
