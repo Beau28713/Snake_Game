@@ -1,11 +1,3 @@
-# Simple Snake Game
-# By Beau J Calrk
-# Python 3.8.9
-# Pygame 2.0.1
-
-# The object of the game is to eat ass much fruit as you can with out 
-# touching the screen edges or colliding with yourself.
-
 import pygame
 import sys
 import time
