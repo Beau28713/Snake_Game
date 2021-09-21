@@ -48,11 +48,11 @@ score = 0
 score_font = pygame.font.Font('freesansbold.ttf', 15)
 score_rect = pygame.Rect(10, 10, 10, 10)
 
-pygame.mixer_music.load(r'Add pathe to mp3 file')
-pygame.mixer_music.set_volume(0.7)
-pygame.mixer_music.play(loops=-1)
+# pygame.mixer_music.load(r'Add pathe to mp3 file')
+# pygame.mixer_music.set_volume(0.7)
+# pygame.mixer_music.play(loops=-1)
 
-test = pygame.mixer.Sound(r'Add path to wave file')
+# collide_sound = pygame.mixer.Sound(r'Add path to wave file')
 
 def paused_game():
     paused = True
@@ -138,7 +138,7 @@ while True:
 
     #Check to see if snake collides with dot and add one to score if it does
     if pygame.Rect.colliderect(snake_body_rect, pygame.Rect(dot_x_cord, dot_y_cord, 20, 20)):
-        test.play()
+       # collide_sound.play() # Use this to make a soind when snake eats fruit
         dot_x_cord = random.randrange(5, 570)
         dot_y_cord = random.randrange(5, 670)
         score += 1
